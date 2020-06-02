@@ -1,0 +1,148 @@
+body {
+  background-color: #F5F5F5;
+  font-family: 'Arial';
+}
+
+/*JS code*/
+@function textShadow($precision, $size, $color){
+  $value: null;
+  $offset: 0;
+  $length: $size * (1 / $precision) - 1;
+
+  @for $i from 0 through $length {
+    $offset: $offset + $precision;
+    $shadow: $offset + px $offset + px $color;
+    $value: append($value, $shadow, comma);
+  }
+  @return $value;
+}
+
+.playful span {
+  position: relative;
+  color: #70db70;
+  animation: scatter 1.75s infinite;
+}
+
+.playful span:nth-child(2n) {
+  color: #ffb3ff;
+  animation-delay: 0.3s;
+}
+
+.playful span:nth-child(3n) {
+  color: #4da6ff;
+  animation-delay: 0.15s;
+}
+
+.playful span:nth-child(4n), .playful span:nth-child(7n) {
+  color: #994d00;
+  animation-delay: 0.25s;
+}
+
+@keyframes scatter {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+body {
+  background-color: $background;
+}
+
+h1 {
+  font-size: 75px;
+  text-transform: uppercase;
+  font-family: "Archivo", "Archivo", sans-serif;
+  font-weight: 600;
+  display: block;
+  width: 666px;
+  max-width: 80vw;
+  min-height: 90px;
+  height: auto;
+  text-align: center;
+  margin: 10rem auto;
+  margin: calc(50vh - 5rem) auto;
+}
+
+.line {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  font-family: sans-serif;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+  border-right: solid 3px;
+  white-space: nowrap;
+  overflow: hidden;    
+  font-size: 18px;
+  margin: 0 auto;
+
+  animation: animated-text 3s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/*text animation*/
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 402px;}
+}
+
+/*cursor animations*/
+@keyframes animated-cursor{
+  from{border-right-color: orange;}
+  to{border-right-color: transparent;}
+}
+
+ul.topnav {
+	list-style-type: none;	
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Open Sans';
+}
+ul.topnav a {
+	display: inline-block;
+	padding: 0 35px;
+	text-decoration: none;
+	color: black;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  color: black;
+  font-family: 'Arial';
+  letter-spacing: 0.8px;
+  background-color: #F5F5F5;
+
+}
+.alignleft {
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 3px 15px;
+}
+ul.socials {
+  list-style-type: none;  
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+ul.socials a {
+  display: inline-block;
+  padding: 0 15px 0 5px;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }

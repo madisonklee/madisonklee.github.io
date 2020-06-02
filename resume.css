@@ -1,0 +1,148 @@
+body {
+  background-color: #F5F5F5;
+  font-family: 'Arial';
+  letter-spacing: 0.8
+}
+
+/*top navigation bar*/
+ul.topnav {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Open Sans';
+}
+ul.topnav a {
+	display: inline-block;
+	padding: 0 35px;
+	text-decoration: none;
+	color: black;
+}
+.header {
+  padding: 50px 0 50px 0;
+  text-align: center; 
+}
+
+/*resume header and download link*/
+a {
+  color: black;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.resume {
+  padding-right: 100px; padding-left: 100px; padding-bottom: 50px; padding-top: 0px;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+/*resume overall fade-in animation*/
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.resume_title {
+  text-transform: uppercase;
+  font-size: large;
+  letter-spacing: 2px;
+}
+.resume_head {
+  text-transform: uppercase;
+  font-size: 150%;
+  letter-spacing: 2px;
+}
+* {
+  box-sizing: border-box;
+}
+/* two equal columns that float next to each other */
+.column {
+  flex: 50%;
+  font-size: 16px;
+  margin-bottom: 1em;
+  color: gray;
+}
+/* row floats after the columns */
+.row {
+  display: flex;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  color: black;
+  font-family: 'Arial';
+  letter-spacing: 0.8px;
+  background-color: #F5F5F5;
+}
+.alignleft {
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 3px 15px;
+}
+ul.socials {
+  list-style-type: none;  
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+ul.socials a {
+  display: inline-block;
+  padding: 0 15px 0 5px;
+}
+
+/*footer grow animation */
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+

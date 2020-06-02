@@ -1,0 +1,112 @@
+body {
+  background-color: #F5F5F5;
+  font-family: 'Arial';
+}
+ul.topnav {
+	list-style-type: none;	
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Open Sans';
+}
+ul.topnav a {
+	display: inline-block;
+	padding: 0 35px;
+	text-decoration: none;
+	color: black;
+}
+.contact_text {
+  padding: 50px 0 50px 0;
+  text-align: center; 
+  letter-spacing: 1px;
+
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+/*fade-in animation*/
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.email {
+  text-decoration: none;
+  color: gray;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  color: black;
+  font-family: 'Arial';
+  letter-spacing: 0.8px;
+  background-color: #F5F5F5;
+}
+.alignleft {
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 3px 15px;
+}
+ul.socials {
+  list-style-type: none;  
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+ul.socials a {
+  display: inline-block;
+  padding: 0 15px 0 5px;
+}
+
+/*footer grow animation */
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+
+

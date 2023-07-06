@@ -90,7 +90,7 @@ h1 {
 /*text animation*/
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 402px;}
+  to{width: 420px;}
 }
 
 /*cursor animations*/

@@ -1,7 +1,10 @@
 body {
   background-color: #F5F5F5;
-  font-family: 'Arial';
+  font-family: "Georgia";
+  padding-left: 35px;
+  padding-right: 35px;
 }
+
 ul.topnav {
 	list-style-type: none;	
 	display: flex;
@@ -11,12 +14,14 @@ ul.topnav {
 	font-size: 14px;
 	font-family: 'Open Sans';
 }
+
 ul.topnav a {
 	display: inline-block;
 	padding: 0 35px;
 	text-decoration: none;
 	color: black;
 }
+ 
 .contact_text {
   padding: 50px 0 50px 0;
   text-align: center; 

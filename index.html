@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html>
+
+	<script>
+		window.addEventListener("load", (event) => {
+			new cursoreffects.fairyDustCursor({colors: ["#FFD8FB", "#6BCEFF", "#854F3D", "#89EA78"],});
+			// new cursoreffects.followingDotCursor({ element: document.querySelector("#following") });
+			// cursoreffects.followingDotCursor({ color: ["#FF7474"] });
+		});
+	</script>
+
 <head>
 	<!-- Html page FOR home page -->
 	<title>Home Page</title>
+	<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/layout.css">
 	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-</head>
-<body>
-	<ul class = "topnav">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About</a></li>
-		<li><a href="resume.html">Resume</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
 
-	<p>
-		Hi, I'm
+	
+</head>
+
+<body>
+<div class="entire page">
+
+	<div class="header">
+		<ul class = "topnav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<p class="toptext">
+		Hi there, I'm
 	</p>
 
-	<h1 class="playful" aria-label="Wash your hands">
-		<span aria-hidden="true">M</span><span aria-hidden="true">a</span><span aria-hidden="true">d</span><span aria-hidden="true">i</span><span aria-hidden="true">s</span><span aria-hidden="true">o</span><span aria-hidden="true">n</span><span aria-hidden="true"> </span><span aria-hidden="true"> </span>
-	</h1>
+	<p class="playful" >
+		<span>M</span><span>a</span><span>d</span><span>i</span><span>s</span><span>o</span><span>n</span><span> </span><span>L</span><span>e</span><span>e</span>
+	</p>
 
-	<p class="line anim-typewriter">
+	<p class="bottomtext">
 		I'm a Data Scientist and Software Engineer based in New York City.
 	</p>
 
@@ -52,5 +70,8 @@
     		</span>
 		</ul>
 	</div>
+
+</div>
 </body>
 <html>
+

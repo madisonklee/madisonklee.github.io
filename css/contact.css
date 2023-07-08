@@ -3,12 +3,23 @@ body {
   font-family: "Georgia";
   padding-left: 35px;
   padding-right: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .contact_text {
-  padding: 50px 0 50px 0;
-  text-align: center; 
+  /* padding: 50px 0 50px 0; */
+  /* text-align: center;  */
   letter-spacing: 1px;
+  font-size: 150%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 
   -webkit-animation: fadeIn ease 3s;
   -moz-animation: fadeIn ease 3s;

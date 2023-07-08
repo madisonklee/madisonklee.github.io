@@ -18,7 +18,8 @@ div.mid {
 
 .container {
     border: 3px;
-    padding:30px 100px 30px 100px;
+    /* padding:30px 100px 30px 100px; */
+    padding:30px 35px 30px 35px;
     display: flex;
 
     animation: fadeIn ease 3s;

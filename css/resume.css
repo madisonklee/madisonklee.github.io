@@ -2,29 +2,10 @@ body {
   background-color: #F5F5F5;
   font-family: 'Arial';
   letter-spacing: 0.8;
-  padding: 35px;
+  /* padding: 30px 35px 30px 35px; */
+  height: 100%;
+  width: 100%;
 }
-
-/*top navigation bar*/
-/* ul.topnav {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	padding: 10px;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-family: 'Open Sans';
-}
-ul.topnav a {
-	display: inline-block;
-	padding: 0 35px;
-	text-decoration: none;
-	color: black;
-}
-.header {
-  padding: 50px 0 50px 0;
-  text-align: center; 
-} */
 
 /*resume header and download link*/
 a {
@@ -39,7 +20,8 @@ a:hover {
 }
 
 .resume {
-  padding-right: 100px; padding-left: 100px; padding-bottom: 50px; padding-top: 0px;
+  padding-right: 35px; padding-left: 35px; padding-bottom: 50px; padding-top: 50px;
+  
   -webkit-animation: fadeIn ease 3s;
   -moz-animation: fadeIn ease 3s;
   -o-animation: fadeIn ease 3s;
@@ -95,8 +77,8 @@ a:hover {
   letter-spacing: 2px;
 }
 .resume_head {
-  text-transform: uppercase;
-  font-size: 150%;
+  /* text-transform: uppercase; */
+  font-size: 50px;
   letter-spacing: 2px;
 }
 * {
@@ -109,41 +91,15 @@ a:hover {
   margin-bottom: 1em;
   color: gray;
 }
+div.column:nth-of-type(1) {
+  flex: 0.5;
+}
+div.column:nth-of-type(2) {
+  flex: 2;
+}
+
 /* row floats after the columns */
 .row {
   display: flex;
 }
-
-/* .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-size: 15px;
-  color: black;
-  font-family: 'Arial';
-  letter-spacing: 0.8px;
-  background-color: #F5F5F5;
-}
-.alignleft {
-  float: left;
-  display: flex;
-  justify-content: center;
-  padding: 0 0 3px 15px;
-}
-ul.socials {
-  list-style-type: none;  
-  display: flex;
-  justify-content: center;
-  float: right;
-}
-ul.socials a {
-  display: inline-block;
-  padding: 0 15px 0 5px;
-}
-
-/*footer grow animation */
-/* .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
- */ 
 

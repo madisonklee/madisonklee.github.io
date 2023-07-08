@@ -4,23 +4,23 @@ ul.topnav {
     top: 0;
     left: 0;
     letter-spacing: 0.8px;
-
+    /* width: 100%; */
+    
 	list-style-type: none;
-    font-size: 15px
+    font-size: 15px;
     color: black;
     font-family: 'Arial';
     display: flex;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
+    z-index: 1;
 }
+
 ul.topnav a {
 	text-decoration: none;
     color:black;
     padding: 0 15px 0 5px;
-	/* padding: 0 40px;
-	text-decoration: none;
-	color: black; */
+    display: inline-block;
 }
-
 
 /* entirely for the footer */
 .footer {
@@ -40,15 +40,19 @@ ul.topnav a {
     display: flex;
     justify-content: center;
     padding: 0 0 3px 15px;
+    padding-left: 35px;
   }
   ul.socials {
     list-style-type: none;  
     display: flex;
     justify-content: center;
     float: right;
+    padding-right: 35px;
   }
   ul.socials a {
     display: inline-block;
     padding: 0 15px 0 5px;
   }
   
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }

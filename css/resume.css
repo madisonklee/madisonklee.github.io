@@ -1,11 +1,12 @@
 body {
   background-color: #F5F5F5;
   font-family: 'Arial';
-  letter-spacing: 0.8
+  letter-spacing: 0.8;
+  padding: 35px;
 }
 
 /*top navigation bar*/
-ul.topnav {
+/* ul.topnav {
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
@@ -23,7 +24,7 @@ ul.topnav a {
 .header {
   padding: 50px 0 50px 0;
   text-align: center; 
-}
+} */
 
 /*resume header and download link*/
 a {
@@ -113,7 +114,7 @@ a:hover {
   display: flex;
 }
 
-.footer {
+/* .footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -142,7 +143,7 @@ ul.socials a {
 }
 
 /*footer grow animation */
-.grow { transition: all .2s ease-in-out; }
+/* .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.1); }
-
+ */ 
 

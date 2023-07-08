@@ -3,18 +3,26 @@ body {
   font-family: "Georgia";
   padding-left: 35px;
   padding-right: 35px;
+  height: 100%;
+  width: 100%;
 }
 
-html {
+/* html {
   height:100%;
-  z-index: 1;
+} */
+
+.entirepage {
+  display: table-cell;
+  width: 500px;
+  height: 500px;
+  vertical-align: middle;
 }
 
 /* colorful letters for MADISON */
 .playful span {
   position: relative;
   color: #70db70;
-  animation: scatter 1.5s infinite;
+  animation: scatter 1.2s infinite;
 }
 
 .playful span:nth-child(2n) {
@@ -36,7 +44,10 @@ html {
   position: fixed;
   font-size: 75px;
   font-family: "Archivo", sans-serif;
+  height: 100%;
   top: 33%;
+  
+  display: inline-block;
 }
 
 @keyframes scatter {
@@ -51,20 +62,20 @@ html {
   }
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
-
 /* for "hi there, i'm" */
 .toptext {
   position: fixed;
-  top: 36%;
-  font-size: 20px;
+  top: 29%;
+  font-size: 40px;
+  height: 100%;
 }
 
 /* for bottom text */
 .bottomtext {
   position: fixed;
   top: 53%;
-  font-size: 20px;
+  font-size: 25px;
+  max-height: 100%;
+  display: inline-block;
 }
 

@@ -20,7 +20,7 @@ a:hover {
 }
 
 .resume {
-  padding-right: 35px; padding-left: 35px; padding-bottom: 50px; padding-top: 50px;
+  padding-right: 35px; padding-left: 35px;  padding-top: 50px;
   
   -webkit-animation: fadeIn ease 3s;
   -moz-animation: fadeIn ease 3s;
@@ -88,7 +88,7 @@ a:hover {
 .column {
   flex: 50%;
   font-size: 16px;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   color: gray;
 }
 div.column:nth-of-type(1) {

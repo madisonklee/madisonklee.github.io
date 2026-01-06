@@ -4,21 +4,27 @@ ul.topnav {
     top: 0;
     left: 0;
     letter-spacing: 0.8px;
-    /* width: 100%; */
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
     
 	list-style-type: none;
     font-size: 15px;
     color: black;
     font-family: 'Arial';
     display: flex;
-    /* background-color: #F5F5F5; */
+    background-color: #F5F5F5;
     z-index: 1;
+}
+
+ul.topnav li {
+    padding: 0 0 0 35px;
 }
 
 ul.topnav a {
 	text-decoration: none;
     color:black;
-    padding: 0 15px 0 5px;
+    padding: 0 0 0 5px;
     display: inline-block;
 }
 

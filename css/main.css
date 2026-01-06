@@ -47,7 +47,7 @@ body {
   font-size: 75px;
   font-family: "Archivo", sans-serif;
   height: 100%;
-  top: 34%;
+  top: 33%;
 
   display: inline-block;
 }
@@ -64,6 +64,57 @@ body {
   }
 }
 
+.hometext {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+/*fade-in animation*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* for top text */
 .toptext {
   position: fixed;
@@ -76,7 +127,49 @@ body {
 .bottomtext {
   position: fixed;
   top: 53%;
-  font-size: 25px;
+  font-size: 20px;
   max-height: 100%;
   display: inline-block;
+}
+
+/* Responsive design for smaller screens */ 
+@media (max-width: 768px) {
+  body {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  .toptext {
+    font-size: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    top: 29%;
+  }
+  
+  .playful {
+    font-size: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    top: 34%;
+  }
+  
+  .bottomtext {
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    top: 48%;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  .bottomtext b:nth-of-type(2)::before {
+    content: "";
+    display: block;
+  }
 }

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+	window.addEventListener("load", (event) => {
+		new cursoreffects.fairyDustCursor({colors: ["#FFD8FB", "#6BCEFF", "#854F3D", "#89EA78"],});
+	});
+</script>
+
+<head>
+	<title>Fragrance World - Project Details</title>
+	<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+	<link rel="icon" href="/images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="/css/project.css">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<script src="components.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	
+	<div class="project-container">
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="hero-content">
+				<h1 class="project-title">Fragrance World</h1>
+				<p class="value-proposition">A website to democratize fragrances, where brands can upload their own perfumes and link users on locations to purchase and users can upload their own reviews. It's the HuggingFace of perfumes and colognes.</p>
+				
+				<p class="role-text"><span class="role-label">Role:</span>Sole designer & engineer - product framing, UX, frontend, backend, and deployment</p>
+				
+				<div class="status-badge">In Progress</div>
+			</div>
+			<div class="hero-visual">
+				<img src="fragrance_world/WelcomePage.png" alt="Fragrance World Platform" class="hero-image">
+			</div>
+		</section>
+
+		<!-- Problem Framing -->
+		<section class="section">
+			<h2>Problem Framing</h2>
+			<div class="problem-content">
+				<div class="problem-point">
+					<h3>The Discovery</h3>
+					<p>I got into perfumes about a year and a half ago, but I've never been someone who overconsumes. I found myself constantly smelling perfumes in stores but rarely buying because I didn't want to spend $150 on just any scent. This led me to discover smaller indie brands-some with unique fragrances, some offering dupes of high-end perfumes.</p>
+				</div>
+				<div class="problem-point">
+					<h3>The Market Gap</h3>
+					<p>As I dove deeper into the perfume world, I realized there's a vibrant community of enthusiasts and a vast number of small brands that few people have ever heard of. From an AI and tech perspective, I saw an inefficiency: these small brands were going undiscovered, users didn't have a central place to explore and share insights, and the market was fragmented.</p>
+				</div>
+				<div class="problem-point">
+					<h3>The Vision</h3>
+					<p>I set out to build the "Hugging Face of perfumes"-a platform where brands can upload their own information and users can easily search for and discover fragrances. Existing databases like Fragrantica and Parfumo didn't give brands control over their listings and often prioritized outdated interfaces over user experience. The problem was clear: small brands lacked visibility, users lacked control, and the market was inefficient.</p>
+				</div>
+				<div class="problem-point">
+					<h3>Constraint</h3>
+					<p>I was the only "frag-head" technologist I knew, meaning I had to build this entirely solo.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Product & Design Thinking -->
+		<section class="section">
+			<h2>Product & Design Thinking</h2>
+			<div class="design-content">
+				<div class="design-section">
+					<h3>User Research & Insights</h3>
+					<p>To build a platform that truly helped fragrance enthusiasts, I spoke with friends and members of the fragrance community. Their needs ranged from simply wanting to know a perfume's notes to wanting a comprehensive, all-in-one platform.</p>
+					
+					<div class="user-segments">
+						<div class="segment">
+							<h4>Casual users</h4>
+							<p>Most didn't even know fragrance databases existed. The key was to offer them a simple, intuitive experience.</p>
+						</div>
+						<div class="segment">
+							<h4>Enthusiast users</h4>
+							<p>Already active on other platforms, they needed reasons to switch-access to small indie brands, direct communication with brands, discovery tools, and a better, ad-free experience.</p>
+						</div>
+						<div class="segment">
+							<h4>Small brands</h4>
+							<p>These brands had never had a voice on a democratized platform. The challenge was making the platform simple enough for non-technical users while providing real exposure.</p>
+						</div>
+						<div class="segment">
+							<h4>Large brands</h4>
+							<p>This would be the hardest group to engage, so my strategy was to focus on user and small brand traction first before targeting them.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Execution (Design to Build) -->
+		<section class="section">
+			<h2>Execution (Design to Build)</h2>
+			<img src="fragrance_world/HomeGif.gif" alt="Fragrance World Design Process" class="execution-image-full">
+			<div class="execution-content">
+				<div class="execution-column">
+					<h3>Design</h3>
+					<p>I iterated multiple times to achieve a look that was chic, playful, and easy to understand. Every feature had to be intuitive and functional, following the principle that there is beauty when something works and it works intuitively.</p>
+				</div>
+				<div class="execution-column">
+					<h3>Engineering</h3>
+					<p>I built the platform using Next.js, connecting front- and back-end seamlessly, and hosted the database on Google Cloud. This setup allowed me to scale while keeping the system maintainable.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Technical Architecture -->
+		<section class="section">
+			<h2>Technical Architecture</h2>
+			<img src="fragrance_world/PerfumeGif.gif" alt="Fragrance World Technical Architecture" class="execution-image-full">
+			<div class="architecture-content">
+				<p>Fragrance World is a full-stack JavaScript application:</p>
+				
+				<div class="tech-details">
+					<div class="tech-item">
+						<h4>Framework</h4>
+						<p>Next.js 15.5.3 with React 19.1.0 for the frontend UI</p>
+					</div>
+					<div class="tech-item">
+						<h4>Database</h4>
+						<p>PostgreSQL, with custom queries via the pg library to manage relationships between perfumes, brands, users, reviews, and analytics</p>
+					</div>
+					<div class="tech-item">
+						<h4>Authentication</h4>
+						<p>JWT tokens stored in local/session storage, with password hashing via Node.js crypto module</p>
+					</div>
+					<div class="tech-item">
+						<h4>Frontend</h4>
+						<p>Component-based architecture using CSS modules and inline styles, Google Fonts, and a responsive design system with CSS variables</p>
+					</div>
+					<div class="tech-item">
+						<h4>Architecture Pattern</h4>
+						<p>The application uses Next.js Pages Router with API routes handling backend logic, creating a monolithic but organized codebase where serverless endpoints and frontend pages coexist.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Outcomes & Impact -->
+		<section class="section">
+			<h2>Impact</h2>
+			<div class="outcomes-content">				
+				<div class="outcome-item">
+					<h3>Perseverance</h3>
+					<p>Passion alone isn't enough-I faced burnout and self-doubt but persevered.</p>
+				</div>
+				<div class="outcome-item">
+					<h3>Design Criticality</h3>
+					<p>Design is critical: a strong UX/UI made development smoother and the product more accessible.</p>
+				</div>
+				<div class="outcome-item">
+					<h3>User-Centered Approach</h3>
+					<p>User-centered prototyping is essential; building with real user needs in mind accelerates impact.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Learnings & Tradeoffs -->
+		<section class="section">
+			<h2>Learnings & Tradeoffs</h2>
+			<div class="learnings-content">
+				<div class="learning-item">
+					<h3>Design Importance</h3>
+					<p>I underestimated how critical design is to a platform's success.</p>
+				</div>
+				<div class="learning-item">
+					<h3>Marketing Challenge</h3>
+					<p>Marketing is harder than I thought-it requires skills outside my offline, tech-focused nature.</p>
+				</div>
+				<div class="learning-item">
+					<h3>Entrepreneur Respect</h3>
+					<p>I gained deep respect for the strengths of entrepreneurs and creatives who balance product, design, and promotion.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Final Artifacts & Links -->
+		<section class="section">
+			<h2>Final Artifacts & Links</h2>
+			<div class="artifacts-content">
+				<div class="artifact-links">
+					<a href="#" class="artifact-link">Live Site (Coming Soon)</a>
+					<a href="#" class="artifact-link">GitHub Repository (Private)</a>
+					<a href="https://www.figma.com/design/xLfUZck7j3Huxai6vINzfU/fragrance-world?node-id=210-71&t=3UxbuXcaj8IEZVdg-1" class="artifact-link" target="_blank">Figma Design File</a>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div id="footer"></div>
+</body>
+</html>

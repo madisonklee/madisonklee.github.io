@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+	window.addEventListener("load", (event) => {
+		new cursoreffects.fairyDustCursor({colors: ["#FFD8FB", "#6BCEFF", "#854F3D", "#89EA78"],});
+	});
+</script>
+
+<head>
+	<!-- Html page FOR portfolio page -->
+	<title>Portfolio Page</title>
+	<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<script src="js/components.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	
+	<div class="portfolio-container">
+		<h1 class="portfolio-title">My Projects</h1>
+		
+		<div class="projects-grid">
+			<div class="project-card">
+				<a href="portfolio_projects/fragrance_world.html" target="_blank" style="text-decoration: none; color: inherit;">
+					<div class="project-image">
+						<img src="portfolio_projects/fragrance_world/WelcomePage.png" alt="Fragrance World" width="300">
+					</div>
+					<div class="project-content">
+						<h3>Fragrance World</h3>
+						<p class="project-year">2025 - current</p>
+						<p>A website to democratize fragrances, where brands can upload their own perfumes and link users on locations to purchase and users can upload their own reviews.</p>
+						<p class="tag-label">Design and Product</p>
+						<div class="project-tags">
+							<span class="tag">Framing</span>
+							<span class="tag">Architecture</span>
+							<span class="tag">User Flows</span>
+							<span class="tag">Platform Design</span>
+						</div>
+						<p class="tag-label">Engineering</p>
+						<div class="project-tags">
+							<span class="tag">React</span>
+							<span class="tag">Next.js</span>
+							<span class="tag">Node.js</span>
+							<span class="tag">PostgreSQL</span>
+							<span class="tag">Google Cloud</span>
+						</div>
+						<p class="project-status">Status: In Progress</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="project-card">
+				<a href="/portfolio_projects/recovery.html" style="text-decoration: none; color: inherit;">
+					<div class="project-image">
+						<img src="portfolio_projects/recovery/Recovery-Thumbnail.png" alt="Recovery App">
+					</div>
+					<div class="project-content">
+						<h3>Recovery</h3>
+						<p class="project-year">2024</p>
+						<p>A recovery app for stroke patients with apraxia or aphasia, enabling them to practice occupational and speech therapy at home using guided speech-movement examples.</p>
+						<p class="tag-label">Design and Product</p>
+						<div class="project-tags">
+							<span class="tag">UX Research</span>
+							<span class="tag">Product Frameworking</span>
+							<span class="tag">User Journey Mapping</span>
+							<span class="tag">Accessibility Design</span>
+						</div>
+						<p class="project-status">Status: Complete</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="project-card">
+				<a href="https://github.com/madisonklee/The-Never-Ending-Plate-of-Food/tree/main" target="_blank" style="text-decoration: none; color: inherit;">
+					<div class="project-image">
+						<img src="portfolio_projects/comp_sound/NeverEnding.png" alt="The Never Ending Plate of Food" width="300">
+					</div>
+					<div class="project-content">
+						<h3>The Never Ending Plate of Food</h3>
+						<p class="project-year">2023</p>
+						<p>Lab #1 for the Computational Sound course, focused on designing an interactive audio-visual experience in which each keyboard letter initiated a distinct instrumental sound and a synchronized visual animation.</p>
+						<p class="tag-label">Product & UX</p>
+						<div class="project-tags">
+							<span class="tag">Interaction Design</span>
+							<span class="tag">UI Prototyping</span>
+							<span class="tag">Visual Layout</span>
+						</div>
+						<p class="tag-label">Engineering</p>
+						<div class="project-tags">
+							<span class="tag">Event Handling</span>
+							<span class="tag">Audio Interaction</span>
+							<span class="tag">DOM Manipulation</span>
+						</div>
+						<p class="project-status">Status: Complete</p>
+					</div>
+				</a>
+			</div>
+			
+			<div class="project-card">
+				<a href="https://borlandclinic.org/" target="_blank" style="text-decoration: none; color: inherit;">
+					<div class="project-image">
+						<img src="portfolio_projects/borland_free_clinic/bfc.png" alt="Borland Free Clinic" width="300">
+					</div>
+					<div class="project-content">
+						<h3>Borland Free Clinic</h3>
+						<p class="project-year">2020</p>
+						<p>Designed and implemented the UI/UX for the Borland Free Clinic, helping community members easily navigate the site, find the right services, and book appointments. The clinic is located in Tualatin, OR.</p>
+						<p class="tag-label">Product/Design</p>
+						<div class="project-tags">
+							<span class="tag">Responsive & Accessible Design</span>
+							<span class="tag">Prototyping (Figma)</span>
+						</div>
+						<p class="tag-label">Engineering</p>
+						<div class="project-tags">
+							<span class="tag">Frontend Development (HTML, CSS, JavaScript)</span>
+							<span class="tag">Performance Optimization</span>
+						</div>
+						<p class="project-status">Status: Complete</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer"></div>
+</body>
+<html>

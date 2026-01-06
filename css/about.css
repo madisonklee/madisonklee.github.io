@@ -88,3 +88,23 @@ div.mid {
   letter-spacing: 0.6px;
   line-height: 1.6;
 }
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .container__image {
+    margin: 0 0 20px 0;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container__text {
+    text-align: left;
+  }
+}
